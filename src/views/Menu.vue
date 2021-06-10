@@ -27,7 +27,7 @@
             :collapse="isTrue"
             :default-active="$route.path"
             :default-openeds="menuOpeneds"
-            background-color="#324767"
+            background-color="#05095B"
             text-color="#fff"
             class="menu-control"
             @select="menuSelect"
@@ -437,7 +437,7 @@ export default {
     display: flex;
     align-items: center;
     &.is-active {
-      background-color: #182943 !important;
+      background-color: #00348a!important;
       color: #fff;
     }
   }
@@ -462,7 +462,7 @@ export default {
         height: 40px;
         line-height: 40px;
         &.is-active {
-          background-color: #182943 !important;
+          background-color: #05095B!important;
         }
       }
     }
@@ -503,8 +503,8 @@ export default {
   transition: all 0.3s;
   width: 3rem;
   height: 100%;
-  background-color: #324767;
-  box-shadow: 1px 0 8px 0 #b7b7b9;
+  background-color: #05095B;
+  border-right: 1px solid #0C6DB5;
   position: relative;
   z-index: 2;
   color: #fff;
@@ -518,10 +518,6 @@ export default {
     display: flex;
     overflow: hidden;
     align-items: center;
-    .img-box {
-      height: 1.5625rem;
-      width: 1.5625rem;
-    }
   }
 }
 .menu-cur {
@@ -534,8 +530,8 @@ export default {
 }
 .header-title {
   height: 6rem;
-  background-color: #324767;
-  box-shadow: 0 4px 4px 0 #293c59;
+  background-color: #05095B;
+  box-shadow: 0 4px 4px 0 #05095B;
   transition: all 0.3s;
   display: flex;
   justify-content: center;
@@ -546,15 +542,15 @@ export default {
     overflow: hidden;
     align-items: center;
     img {
-      width: 1.75rem;
+      width: 2.2rem;
     }
   }
 }
 h4 {
   flex: 1;
-  font-size: 1.125rem;
+  font-size: 14px;
   font-weight: 500;
-  padding-left: 0.925rem;
+  line-height: 32px;
   box-sizing: content-box;
 }
 .nav-title {
@@ -636,10 +632,10 @@ h4 {
   position: relative;
 }
 .control .header {
-  background-color: #fff;
+  background-color: #05095B;
   height: 3rem;
   position: relative;
-  box-shadow: 2px 2px 12px 0 #eeeeee;
+  border-bottom: 1px solid #0C6DB5;
   display: flex;
   overflow: hidden;
   align-items: center;
