@@ -1,0 +1,76 @@
+.formCom {
+  .commodity-form {
+    width: 80%;
+    margin: 0 auto;
+    .form-item {
+      .form-cell {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        span {
+          font-size: 12px;
+          color: #666666;
+        }
+      }
+    }
+  }
+  .form-item {
+    display: flex;
+    // align-items: center;
+    .el-form-item__content {
+      flex: 1;
+      margin-left: 0px !important;
+      display: flex;
+    }
+    &.el-form-item-long {
+      .el-form-item__label {
+        align-self: flex-start;
+      }
+    }
+    &.form-itemS {
+      .el-form-item__label {
+        align-self: flex-start;
+      }
+    }
+  }
+  .form-item-suffix {
+    margin-left: 5px;
+  }
+  .form-item-hint {
+    .el-form-item__content {
+      display: block;
+    }
+    p {
+      line-height: 1.6;
+    }
+  }
+  .commodity-textarea {
+    .el-textarea__inner {
+      height: 200px;
+      resize: none;
+    }
+  }
+  .el-upload-list--picture-card .el-upload-list__item {
+    width: 286px;
+    height: 138px;
+  }
+  .fom-title {
+    margin-bottom: 2rem;
+  }
+  .form-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    button {
+      width: 10rem;
+    }
+  }
+  // 不可编辑
+  .item-disabled {
+    cursor: not-allowed;
+    .el-upload.el-upload--text, .el-upload-list__item {
+      pointer-events: none;
+      background-color: #f5f5f5;
+    }
+  }
+}
